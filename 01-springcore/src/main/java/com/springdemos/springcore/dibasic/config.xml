@@ -9,6 +9,6 @@
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
     
-    <bean name="emp" class="com.springdemos.springcore.dibasic.Employee">
-    </bean>
+    <bean name="emp" class="com.springdemos.springcore.dibasic.Employee"
+    p:id="99" p:name="Max" p:age="36"/>
 </beans>

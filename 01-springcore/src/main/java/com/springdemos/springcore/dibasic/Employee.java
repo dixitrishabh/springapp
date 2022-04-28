@@ -3,6 +3,13 @@ package com.springdemos.springcore.dibasic;
 public class Employee {
 	int id;
 	String name;
+	int age;
+	public int getAge() {
+		return age;
+	}
+	public void setAge(int age) {
+		this.age = age;
+	}
 	public int getId() {
 		return id;
 	}
@@ -17,7 +24,8 @@ public class Employee {
 	}
 	@Override
 	public String toString() {
-		return "Employee [id=" + id + ", name=" + name + "]";
+		return "Employee [id=" + id + ", name=" + name + ", age=" + age + "]";
 	}
+	
 
 }
