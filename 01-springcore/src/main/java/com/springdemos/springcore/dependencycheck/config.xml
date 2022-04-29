@@ -10,7 +10,7 @@
     http://www.springframework.org/schema/context/spring-context.xsd">
     
   	<bean name="prescription"
-		class="com.springdemos.springcore.dependencycheck.Prescription"/>
+		class="com.springdemos.springcore.dependencycheck.Prescription" p:id="111" />
 
 	<context:annotation-config />
 </beans>
