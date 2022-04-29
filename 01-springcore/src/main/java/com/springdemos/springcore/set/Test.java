@@ -9,6 +9,7 @@ public class Test {
 		
 		CarDealer carDealer = (CarDealer) context.getBean("cardealer");
 		System.out.println( carDealer);
+		System.out.println(carDealer.getModels().getClass());
 	}
 
 }
