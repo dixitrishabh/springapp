@@ -13,17 +13,41 @@ public class SpringJdbcApp {
 		ApplicationContext context = new ClassPathXmlApplicationContext("com/springdemos/springjdbc/employee/config/config.xml");
 		EmployeeDao employeedao = (EmployeeDao) context.getBean("employeedao");
 		
-		createEmployee(employeedao);
+//		createEmployee(employeedao);
+//		createEmployee(employeedao);
+		delteEmployee(employeedao);
+		
+	}
+	
+//	private static void updateEmployee(EmployeeDao employeedao) {
+//		Employee emp = new Employee();
+//		emp.setId(2);
+//		emp.setFirstName("Max");
+//		emp.setLastName("White");
+//		int result = employeedao.update(emp);
+//		System.out.println("Number of records update are: " + result);
+//		
+//		
+//	}
+	
+	private static void delteEmployee(EmployeeDao employeedao) {
+		Employee emp = new Employee();
+		emp.setId(2);
+		int result = employeedao.delete(emp);
+		System.out.println("Number of records delete are: " + result);
+		
 		
 	}
 
-	private static void createEmployee(EmployeeDao employeedao) {
-		Employee emp = new Employee();
-		emp.setId(2);
-		emp.setFirstName("Max");
-		emp.setLastName("Rider");
-		int result = employeedao.create(emp);
-		System.out.println("Number of records inserted are: " + result);
-	}
+//	private static void createEmployee(EmployeeDao employeedao) {
+//		Employee emp = new Employee();
+//		emp.setId(2);
+//		emp.setFirstName("Max");
+//		emp.setLastName("White");
+//		int result = employeedao.create(emp);
+//		System.out.println("Number of records inserted are: " + result);
+//		
+//		
+//	}
 	
 }
